@@ -11,20 +11,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar light bg-light">
+    <div class="container pt-4">
+        <nav class="navbar light bg-light rounded border border-secondary-subtle">
             <div class="container-fluid">
                 <span class="navbar-brand mb-1 h1">Payment from example</span>
             </div>
         </nav>
     </div>
-    <div class="container">
-        <div class="alert alert-danger p3" role="alert">
+    <div class="container pt-3">
+        <div class="alert alert-danger" role="alert">
             Some fields are missing
         </div>
     </div>
         
-    <div class="container"> 
+    <div class="container rounded border border-secondary-subtle"> 
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-5">
                 <label for="validationCustom01" class="form-label">Card #</label>
@@ -92,9 +92,9 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <label for="paymentMethod">Aceptamos</label>
+                <label for="paymentMethod" class="pb-3">We accept:</label>
                 <br>
-                <div class="form-check bg-secondary form-check-inline">
+                <div class="form-check bg-secondary form-check-inline rounded">
                     
                     <input type="radio" name="paymentMethod" id="mastercard" value="MasterCard">
                     <label for="mastercard"><i class="fa-brands fa-cc-mastercard" style="color: #ffffff;" ></i></label>
@@ -122,7 +122,7 @@
             </div>
     </div>
     <div class="container">            
-            <div class="col-12 d-flex justify-content-end bg-body-tertiary mb1">
+            <div class="col-12 d-flex justify-content-end light bg-light rounded border border-secondary-subtle py-2 pe-3">
                 <button class="btn btn-secondary" type="button">Cancel</button>
                 <button class="btn btn-primary" type="submit">Send</button>
             </div>
