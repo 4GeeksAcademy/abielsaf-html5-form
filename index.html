@@ -16,6 +16,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="card-header p-3">
+              <!-- Header/Title -->
               <h3 class="mb-0">Payment form example</h3>
             </div>
             <form id="form">
@@ -23,14 +24,15 @@
                 <div class="row error">
                   <div class="col-sm-12">
                     <span id="aletInputMissing">
-
-                      <div class="alert alert-danger" role="alert">
+                      <!-- Alert message if something is missing/not in the correct format -->
+                      <div class="alert alert-danger" role="alert"> 
                         Some fields are missing.
                       </div>
                     </span>
                   </div>
                 </div>
                 <div class="row g-3"> 
+                  <!-- First row -->
                   <div class="col-sm-5">
                     <label for="card" class="form-label">Card #</label>
                     <input type="text" class="form-control" id="card" placeholder="XXXX-XXXX-XXXX-XXX" inputmode="numeric"
@@ -45,11 +47,12 @@
                     <label for="amount" class="form-label">Amount</label>
                     <div class="input-group">
                       <span class="input-group-text">$</span>
-                      <input type="number" class="form-control" id="amount" placeholder="Amount 0,00"
-                        aria-label="Dollar amount (with dot and two decimal places)" required>
+                      <input type="number" class="form-control" id="amount" placeholder="Amount 0"
+                        aria-label="Amount (to the nearest dollar)" required>
                     </div>
                   </div>
                   <div class="col-sm-6"> 
+                    <!-- Second row -->
                     <label for="first-name" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="first-name" name="first-name" required>
                   </div>
@@ -58,6 +61,7 @@
                     <input type="text" class="form-control" id="last-name" name="last-name">
                   </div>
                   <div class="col-sm-6"> 
+                    <!-- Third row -->
                     <label for="city" class="form-label">City</label>
                     <input type="text" class="form-control" id="city" name="city" required>
                   </div>
@@ -77,6 +81,7 @@
                   </div>
                 </div>
                 <div class="row d-flex justify-content-between mt-3">
+                  <!-- Fouth row -->
                   <div class="col-sm-3">
                     <label for="payment-type" class="form-label">We accept: </label>
                     <div class="bg-secondary rounded d-flex justify-content-between p-2">
