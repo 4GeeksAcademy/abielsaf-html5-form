@@ -16,7 +16,6 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="card-header p-3">
-              <!-- Header/Title -->
               <h3 class="mb-0">Payment form example</h3>
             </div>
             <form id="form">
@@ -24,7 +23,6 @@
                 <div class="row error">
                   <div class="col-sm-12">
                     <span id="aletInputMissing">
-                      <!-- Alert message if something is missing/not in the correct format -->
                       <div class="alert alert-danger" role="alert"> 
                         Some fields are missing.
                       </div>
@@ -32,15 +30,14 @@
                   </div>
                 </div>
                 <div class="row g-3"> 
-                  <!-- First row -->
                   <div class="col-sm-5">
                     <label for="card" class="form-label">Card #</label>
-                    <input type="text" class="form-control" id="card" placeholder="XXXX-XXXX-XXXX-XXX" inputmode="numeric"
+                    <input type="text" class="form-control" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXX" inputmode="numeric"
                       pattern="[0-9]{16}" name="card" required>
                   </div>
                   <div class="col-sm-3">
                     <label for="cvc" class="form-label">CVC #</label>
-                    <input type="text" class="form-control" id="cvc" placeholder="XXX" name="cvc" inputmode="numeric"
+                    <input type="text" class="form-control" id="cvcNumber" placeholder="XXX" name="cvc" inputmode="numeric"
                       pattern="[0-9]{3}" required>
                   </div>
                   <div class="col-sm-4">
@@ -52,22 +49,21 @@
                     </div>
                   </div>
                   <div class="col-sm-6"> 
-                    <!-- Second row -->
                     <label for="first-name" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="first-name" name="first-name" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
                   </div>
                   <div class="col-sm-6">
                     <label for="last-name" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" name="last-name">
+                    <input type="text" class="form-control" id="lastName" name="firstName">
                   </div>
                   <div class="col-sm-6"> 
                     <!-- Third row -->
                     <label for="city" class="form-label">City</label>
-                    <input type="text" class="form-control" id="city" name="city" required>
+                    <input type="text" class="form-control" id="cityName" name="cityName" required>
                   </div>
                   <div class="col-sm-3">
                     <label for="state" class="form-label">State</label> 
-                    <select class="form-select" id="state" required>
+                    <select class="form-select" id="stateName" required>
                       <option selected disabled value="">Pick a state</option>
                       <option>Madrid</option>
                       <option>Segovia</option>
@@ -78,16 +74,15 @@
                   </div>
                   <div class="col-sm-3">
                     <label for="postal-code" class="form-label">Postal code</label>
-                    <input type="text" class="form-control" id="postal-code" name="postal-code" inputmode="numeric" pattern="[0-9]{1,5}" required>
+                    <input type="text" class="form-control" id="postalCode" name="postalCode" inputmode="numeric" pattern="[0-9]{1,5}" required>
                   </div>
                 </div>
                 <div class="row d-flex justify-content-between mt-3">
-                  <!-- Fouth row -->
                   <div class="col-sm-3">
                     <label for="payment-type" class="form-label">We accept: </label>
                     <div class="bg-secondary rounded d-flex justify-content-between p-2">
                       <div>
-                        <input class="cardtype" type="radio" id="card-type" name="cardtype" value="" required /> <i
+                        <input class="cardtype" type="radio" id="cardType" name="cardType" value="" required /> <i
                           class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
                       </div>
                       <div>
@@ -106,7 +101,7 @@
                   </div>
                   <div class="col-sm-6">
                     <label for="message" class="form-label">Message:</label>
-                    <textarea type="text" class="form-control" id="message" name="message" rows="5"></textarea>
+                    <textarea type="text" class="form-control" id="messageBox" name="messageBox" rows="5"></textarea>
                     <p class="mt-1">Add any notes here.</p>
                   </div>
                 </div>
@@ -127,10 +122,6 @@
           </div>
         </div>
       </div>
-
-
-
-
 
 
 
